@@ -97,8 +97,6 @@ services:
       - "3306:3306"
     environment:
       - MYSQL_DATABASE=my_database
-    env_file:
-       - '.secrets'
     volumes:
       - mysql-data:/var/lib/mysql
     networks:
